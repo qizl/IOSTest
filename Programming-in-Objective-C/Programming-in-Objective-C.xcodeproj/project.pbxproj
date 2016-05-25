@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F09EB0A31CF601690090D4EB /* TraingularNum.m in Sources */ = {isa = PBXBuildFile; fileRef = F09EB0A21CF601690090D4EB /* TraingularNum.m */; };
 		F0A09B601CF3ECF200970E27 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A09B5F1CF3ECF200970E27 /* Fraction.m */; };
 		F0A09B651CF3EF4000970E27 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A09B641CF3EF4000970E27 /* Calculator.m */; };
 		F0BD2AC61CF3D8F5002B2745 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BD2AC51CF3D8F5002B2745 /* main.m */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F09EB0A11CF5FFB20090D4EB /* TraingularNum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TraingularNum.h; sourceTree = "<group>"; };
+		F09EB0A21CF601690090D4EB /* TraingularNum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TraingularNum.m; sourceTree = "<group>"; };
 		F0A09B5F1CF3ECF200970E27 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
 		F0A09B611CF3EE0E00970E27 /* Fraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
 		F0A09B631CF3EF0400970E27 /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
@@ -45,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F09EB0A01CF5FF450090D4EB /* Chapter5 */ = {
+			isa = PBXGroup;
+			children = (
+				F09EB0A11CF5FFB20090D4EB /* TraingularNum.h */,
+				F09EB0A21CF601690090D4EB /* TraingularNum.m */,
+			);
+			name = Chapter5;
+			sourceTree = "<group>";
+		};
 		F0A09B621CF3EEE400970E27 /* Chapter4 */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +95,7 @@
 		F0BD2AC41CF3D8F5002B2745 /* Programming-in-Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				F09EB0A01CF5FF450090D4EB /* Chapter5 */,
 				F0A09B661CF3EFC600970E27 /* Chapter3 */,
 				F0A09B621CF3EEE400970E27 /* Chapter4 */,
 				F0BD2AC51CF3D8F5002B2745 /* main.m */,
@@ -149,6 +162,7 @@
 				F0A09B651CF3EF4000970E27 /* Calculator.m in Sources */,
 				F0BD2AC61CF3D8F5002B2745 /* main.m in Sources */,
 				F0A09B601CF3ECF200970E27 /* Fraction.m in Sources */,
+				F09EB0A31CF601690090D4EB /* TraingularNum.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,5 +9,12 @@
 #ifndef TraingularNum_h
 #define TraingularNum_h
 
+#import <Foundation/Foundation.h>
+
+@interface TraingularNum:NSObject
+
+-(void) Output;
+
+@end
 
 #endif /* TraingularNum_h */
