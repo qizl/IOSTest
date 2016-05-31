@@ -6,8 +6,19 @@
 //  Copyright © 2016年 qizl. All rights reserved.
 //
 
-#ifndef Fraction1_h
-#define Fraction1_h
+#import <Foundation/Foundation.h>
 
+@interface Fraction1 : NSObject
 
-#endif /* Fraction1_h */
+@property int numerator,denominator;
+
+-(void) print:(BOOL)shouldReduce;
+-(void) setTo:(int) n over:(int)d;
+-(double) convertToNum;
+-(Fraction1*) add:(Fraction1*)f;
+-(Fraction1*) subtract:(Fraction1*)f;
+-(Fraction1*) multiply:(Fraction1*)f;
+-(Fraction1*) divide:(Fraction1*)f;
+-(void) reduce;
+
+@end

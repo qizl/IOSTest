@@ -10,6 +10,7 @@
 #import "Fraction.h"
 #import "Calculator.h"
 #import "TraingularNum.h"
+#import "Fraction1.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -47,7 +48,21 @@ int main(int argc, const char * argv[]) {
         //        else NSLog(@"Is False!");
         
         // Chapter 7
+        Fraction1 *aFraction=[Fraction1 new];
+        Fraction1 *bFraction=[Fraction1 new];
         
+        [aFraction setTo:1 over:4];
+        [bFraction setTo:1 over:2];
+        
+        [aFraction print:NO];
+        NSLog(@"+");
+        [bFraction print:NO];
+        NSLog(@"=");
+        
+        [aFraction add:bFraction];
+        
+        [aFraction reduce];
+        [aFraction print:NO];
     }
     return 0;
 }
