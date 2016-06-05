@@ -10,7 +10,7 @@
 
 @implementation Fraction1
 
-@synthesize numerator,denominator;
+@synthesize numerator,denominator,i;
 
 -(void) print:(BOOL)shouldReduce
 {
@@ -29,6 +29,10 @@
         return (double) numerator / denominator;
     else
         return NAN;
+}
+-(void)paraTest:(int)a :(int)b :(BOOL)c
+{
+    self.i=a+b+c;
 }
 
 - (void) setTo:(int) n over:(int) d

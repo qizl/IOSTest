@@ -48,21 +48,41 @@ int main(int argc, const char * argv[]) {
         //        else NSLog(@"Is False!");
         
         // Chapter 7
-        Fraction1 *aFraction=[Fraction1 new];
-        Fraction1 *bFraction=[Fraction1 new];
+        //        Fraction1 *aFraction=[Fraction1 new];
+        //        //        Fraction1 *bFraction=[Fraction1 new];
+        //
+        //        //        [aFraction setTo:1 over:4];
+        //        //        [bFraction setTo:1 over:2];
+        //        //
+        //        //        [aFraction print:NO];
+        //        //        NSLog(@"+");
+        //        //        [bFraction print:NO];
+        //        //        NSLog(@"=");
+        //        //
+        //        //        [aFraction add:bFraction];
+        //        //
+        //        //        [aFraction reduce];
+        //        //        [aFraction print:NO];
+        //
+        //        [aFraction paraTest:1 :2 :3];
+        //        NSLog(@"%i",aFraction.i);
+        //        aFraction.i=12;
+        //        NSLog(@"%i",aFraction.i);
         
-        [aFraction setTo:1 over:4];
-        [bFraction setTo:1 over:2];
+        // Chapter 8
         
-        [aFraction print:NO];
-        NSLog(@"+");
-        [bFraction print:NO];
-        NSLog(@"=");
-        
-        [aFraction add:bFraction];
-        
-        [aFraction reduce];
-        [aFraction print:NO];
     }
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
