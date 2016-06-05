@@ -6,8 +6,16 @@
 //  Copyright © 2016年 qizl. All rights reserved.
 //
 
-#ifndef Rectangle_h
-#define Rectangle_h
+@class XYPoint;
 
+@interface Rectangle : NSObject
 
-#endif /* Rectangle_h */
+@property int width,height;
+
+-(XYPoint *) origin;
+-(void) setOrigin: (XYPoint *) pt;
+-(int) area;
+-(int) perimeter;
+-(void) setWidth:(int) w :(int) h;
+
+@end

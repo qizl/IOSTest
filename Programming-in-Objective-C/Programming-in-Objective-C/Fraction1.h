@@ -14,7 +14,7 @@
 
 -(void) print:(BOOL)shouldReduce;
 -(void) setTo:(int) n over:(int)d;
--(void) paraTest:(int) a :(int) b:(BOOL) c;
+-(void) paraTest:(int) a :(int) b :(BOOL) c;
 -(double) convertToNum;
 -(Fraction1*) add:(Fraction1*)f;
 -(Fraction1*) subtract:(Fraction1*)f;

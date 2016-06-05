@@ -6,8 +6,10 @@
 //  Copyright © 2016年 qizl. All rights reserved.
 //
 
-#ifndef XYPoint_h
-#define XYPoint_h
+@interface XYPoint : NSObject
 
+@property int x, y;
 
-#endif /* XYPoint_h */
+-(void) setXY:(int) xVal: (int) yVal;
+
+@end

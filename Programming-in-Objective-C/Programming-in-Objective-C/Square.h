@@ -6,8 +6,11 @@
 //  Copyright © 2016年 qizl. All rights reserved.
 //
 
-#ifndef Square_h
-#define Square_h
+#import "Rectangle.h"
 
+@interface Square: Rectangle
 
-#endif /* Square_h */
+-(void) setSide:(int) s;
+-(int) side;
+
+@end

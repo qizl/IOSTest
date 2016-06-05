@@ -7,3 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Square.h"
+
+@implementation Square:Rectangle
+
+-(void) setSide:(int) s
+{
+    [self setWidth: s : s];
+}
+
+-(int) side
+{
+    return self.width;
+}
+
+@end

@@ -57,15 +57,15 @@ int main()
     @autoreleasepool {
         ClassB* b = [[ClassB alloc] init];
         ClassC* c = [[ClassC alloc] init];
-
+        
         [b initVar];
         [c initVar];
-
+        
         NSLog(@"Class B:");
         [b printVar];
         NSLog(@"Class C:");
         [c printVar];
     }
-
+    
     return 0;
 }

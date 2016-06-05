@@ -11,6 +11,9 @@
 #import "Calculator.h"
 #import "TraingularNum.h"
 #import "Fraction1.h"
+#import "Rectangle.h"
+#import "Square.h"
+#import "XYPoint.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -70,7 +73,30 @@ int main(int argc, const char * argv[]) {
         //        NSLog(@"%i",aFraction.i);
         
         // Chapter 8
+        // 1
+        //        Rectangle *rect=[Rectangle new];
+        //        [rect setWidth:5:8];
+        //        NSLog(@"Rectangle: w = %i, h = %i",rect.width,rect.height);
+        //        NSLog(@"Area = %i, Perimeter = %i",[rect area],[rect perimeter]);
+
+        // 2
+        //        Square *square=[Square new];
+        //        [square setSide:5];
+        //        NSLog(@"Square s = %i",[square side]);
+        //        NSLog(@"Area = %i, Perimeter = %i",[square area],[square perimeter]);
         
+        // 3
+        Rectangle *rect=[Rectangle new];
+        XYPoint *point=[XYPoint new];
+        
+        [point setXY:100 :200];
+        
+        [rect setWidth:5 :8];
+        rect.origin = point;
+        
+        NSLog(@"Rectangle w = %i, h = %i", rect.width, rect.height);
+        NSLog(@"Origin at {%i ,%i}",rect.origin.x,rect.origin.y);
+        NSLog(@"Area = %i, Perimeter = %i", [rect area], [rect perimeter]);
     }
     return 0;
 }
