@@ -6,8 +6,11 @@
 //  Copyright © 2016年 qizl. All rights reserved.
 //
 
-#ifndef Complex_h
-#define Complex_h
+@interface Complex:NSObject
 
+@property double real, imaginary;
+-(void) print;
+-(void) set: (double) a: (double) b;
+-(Complex *) add: (Complex *) f;
 
-#endif /* Complex_h */
+@end

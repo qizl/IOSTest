@@ -14,6 +14,7 @@
 #import "Rectangle.h"
 #import "Square.h"
 #import "XYPoint.h"
+#import "Complex.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -78,7 +79,7 @@ int main(int argc, const char * argv[]) {
         //        [rect setWidth:5:8];
         //        NSLog(@"Rectangle: w = %i, h = %i",rect.width,rect.height);
         //        NSLog(@"Area = %i, Perimeter = %i",[rect area],[rect perimeter]);
-
+        
         // 2
         //        Square *square=[Square new];
         //        [square setSide:5];
@@ -86,17 +87,71 @@ int main(int argc, const char * argv[]) {
         //        NSLog(@"Area = %i, Perimeter = %i",[square area],[square perimeter]);
         
         // 3
-        Rectangle *rect=[Rectangle new];
-        XYPoint *point=[XYPoint new];
+        //        Rectangle *rect=[Rectangle new];
+        //        XYPoint *point=[XYPoint new];
+        //
+        //        [point setXY:100 :200];
+        //
+        //        [rect setWidth:5 :8];
+        //        rect.origin = point;
+        //
+        //        NSLog(@"Rectangle w = %i, h = %i", rect.width, rect.height);
+        //        NSLog(@"Origin at {%i ,%i}",rect.origin.x,rect.origin.y);
+        //        NSLog(@"Area = %i, Perimeter = %i", [rect area], [rect perimeter]);
         
-        [point setXY:100 :200];
+        // Chapter 9
+        // 1
+        //        Fraction1* f1 = [Fraction1 new];
+        //        Fraction1* f2 = [Fraction1 new];
+        //        Fraction1* fracResult;
+        //        Complex* c1 = [Complex new];
+        //        Complex* c2 = [Complex new];
+        //        Complex* compResult;
+        //
+        //        [f1 setTo: 1 over: 10];
+        //        [f2 setTo: 2 over: 15];
+        //
+        //        [c1 set: 1 : 10];
+        //        [c2 set: 2 : 15];
+        //
+        //        // 将两个Complex数相加并显示
+        //        [c1 print];NSLog(@"    +");[c2 print];
+        //        NSLog(@"--------");
+        //        compResult = [c1 add: c2];
+        //        [compResult print];
+        //        NSLog(@"\n");
+        //
+        //        // 将两个分数相加并显示
+        //        [f1 print: YES];NSLog(@"    +");[f2 print: YES];
+        //        NSLog(@"--------");
+        //        fracResult = [f1 add: f2];
+        //        [fracResult print: YES];
         
-        [rect setWidth:5 :8];
-        rect.origin = point;
+        // 2
+        id dataValue;
+        Fraction1 *f1 = [Fraction1 new];
+        Complex *c1 = [Complex new];
         
-        NSLog(@"Rectangle w = %i, h = %i", rect.width, rect.height);
-        NSLog(@"Origin at {%i ,%i}",rect.origin.x,rect.origin.y);
-        NSLog(@"Area = %i, Perimeter = %i", [rect area], [rect perimeter]);
+        [f1 setTo: 2 over: 5];
+        [c1 set: 10.0 : 2.5];
+        
+        dataValue = f1;
+        [dataValue print:NO];
+        
+        //        dataValue = c1;
+        //        [dataValue print];
+        
+        NSLog(@"%@",NSStringFromClass([dataValue class]));
+        
+        @try {
+            [dataValue print];
+        } @catch (NSException *exception) {
+            NSLog(@"Caught %@%@", [exception name], [exception reason]);
+        } @finally {}
+        
+        //        NSException* exception = [NSException exceptionWithName:@"throw an exception" reason:@"te a st" userInfo:nil];
+        //        @throw exception;
+        @throw [NSException exceptionWithName:@"throw an exception" reason:@"te a st" userInfo:nil];
     }
     return 0;
 }
