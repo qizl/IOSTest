@@ -15,6 +15,7 @@
 #import "Square.h"
 #import "XYPoint.h"
 #import "Complex.h"
+#import "Fraction2.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -128,30 +129,38 @@ int main(int argc, const char * argv[]) {
         //        [fracResult print: YES];
         
         // 2
-        id dataValue;
-        Fraction1 *f1 = [Fraction1 new];
-        Complex *c1 = [Complex new];
-        
-        [f1 setTo: 2 over: 5];
-        [c1 set: 10.0 : 2.5];
-        
-        dataValue = f1;
-        [dataValue print:NO];
-        
-        //        dataValue = c1;
-        //        [dataValue print];
-        
-        NSLog(@"%@",NSStringFromClass([dataValue class]));
-        
-        @try {
-            [dataValue print];
-        } @catch (NSException *exception) {
-            NSLog(@"Caught %@%@", [exception name], [exception reason]);
-        } @finally {}
-        
+        //        id dataValue;
+        //        Fraction1 *f1 = [Fraction1 new];
+        //        Complex *c1 = [Complex new];
+        //
+        //        [f1 setTo: 2 over: 5];
+        //        [c1 set: 10.0 : 2.5];
+        //
+        //        dataValue = f1;
+        //        [dataValue print:NO];
+        //
+        //        //        dataValue = c1;
+        //        //        [dataValue print];
+        //
+        //        NSLog(@"%@",NSStringFromClass([dataValue class]));
+        //
+        //        @try {
+        //            [dataValue print];
+        //        } @catch (NSException *exception) {
+        //            NSLog(@"Caught %@%@", [exception name], [exception reason]);
+        //        } @finally {}
+        //
         //        NSException* exception = [NSException exceptionWithName:@"throw an exception" reason:@"te a st" userInfo:nil];
         //        @throw exception;
-        @throw [NSException exceptionWithName:@"throw an exception" reason:@"te a st" userInfo:nil];
+        //        @throw [NSException exceptionWithName:@"throw an exception" reason:@"te a st" userInfo:nil];
+        
+        // Chapter 10
+        Fraction2 *a, *b;
+        a=[[Fraction2 alloc] initWith:1 :3];
+        b=[[Fraction2 alloc] initWith:3 :7];
+        
+        [a print];
+        [b print];
     }
     return 0;
 }

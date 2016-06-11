@@ -1,3 +1,4 @@
+
 //
 //  Fraction2.h
 //  Programming-in-Objective-C
@@ -6,8 +7,14 @@
 //  Copyright © 2016年 qizl. All rights reserved.
 //
 
-#ifndef Fraction2_h
-#define Fraction2_h
+#import <Foundation/Foundation.h>
 
+@interface Fraction2 : NSObject
 
-#endif /* Fraction2_h */
+@property int numerator,denominator;
+
+-(Fraction2 *) initWith:(int) n: (int) d;
+-(void) print;
+-(void) setTo:(int) n :(int)d;
+
+@end
