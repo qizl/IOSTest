@@ -6,8 +6,13 @@
 //  Copyright © 2016年 qizl. All rights reserved.
 //
 
-#ifndef Drawing_h
-#define Drawing_h
+@protocol Drawing
 
+@required
+-(void) paint;
+-(void) erase;
 
-#endif /* Drawing_h */
+@optional
+-(void) outline;
+
+@end

@@ -16,6 +16,7 @@
 #import "XYPoint.h"
 #import "Complex.h"
 #import "Fraction2.h"
+#import "GraphicObject.h"
 
 int global_v = 1;
 
@@ -198,6 +199,12 @@ int main(int argc, const char * argv[]) {
         //
         //        typedef enum  { east, west, south, north } Direction;
         //        Direction step1, step2;
+        
+        // Chapter 11
+        GraphicObject *g = [GraphicObject new];
+        [g paint];
+        [g erase];
+        [g outline];
     }
     return 0;
 }

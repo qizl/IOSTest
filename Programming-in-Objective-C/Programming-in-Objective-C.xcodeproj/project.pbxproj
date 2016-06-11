@@ -16,6 +16,7 @@
 		F09EB0A31CF601690090D4EB /* TraingularNum.m in Sources */ = {isa = PBXBuildFile; fileRef = F09EB0A21CF601690090D4EB /* TraingularNum.m */; };
 		F0A09B601CF3ECF200970E27 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A09B5F1CF3ECF200970E27 /* Fraction.m */; };
 		F0A09B651CF3EF4000970E27 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A09B641CF3EF4000970E27 /* Calculator.m */; };
+		F0B951E61D0C5C8C00B19CAF /* GraphicObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B951E51D0C5C8C00B19CAF /* GraphicObject.m */; };
 		F0BD2AC61CF3D8F5002B2745 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BD2AC51CF3D8F5002B2745 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,9 @@
 		F0A09B611CF3EE0E00970E27 /* Fraction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
 		F0A09B631CF3EF0400970E27 /* Calculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
 		F0A09B641CF3EF4000970E27 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+		F0B951E31D0C5BC900B19CAF /* Drawing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Drawing.h; sourceTree = "<group>"; };
+		F0B951E41D0C5C3F00B19CAF /* GraphicObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphicObject.h; sourceTree = "<group>"; };
+		F0B951E51D0C5C8C00B19CAF /* GraphicObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicObject.m; sourceTree = "<group>"; };
 		F0BD2AC21CF3D8F5002B2745 /* Programming-in-Objective-C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Programming-in-Objective-C"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BD2AC51CF3D8F5002B2745 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0BD2ADF1CF3E156002B2745 /* demo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = demo; sourceTree = "<group>"; };
@@ -133,6 +137,16 @@
 			name = Chapter3;
 			sourceTree = "<group>";
 		};
+		F0B951E21D0C5AEF00B19CAF /* Chapter11 */ = {
+			isa = PBXGroup;
+			children = (
+				F0B951E31D0C5BC900B19CAF /* Drawing.h */,
+				F0B951E41D0C5C3F00B19CAF /* GraphicObject.h */,
+				F0B951E51D0C5C8C00B19CAF /* GraphicObject.m */,
+			);
+			name = Chapter11;
+			sourceTree = "<group>";
+		};
 		F0BD2AB91CF3D8F5002B2745 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +167,7 @@
 		F0BD2AC41CF3D8F5002B2745 /* Programming-in-Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				F0B951E21D0C5AEF00B19CAF /* Chapter11 */,
 				F039DF721D0AEE6600C31549 /* Chapter10 */,
 				F0739F211D085BA400E76A13 /* Chapter9 */,
 				F06C609A1D047AA2004F1C42 /* Chapter8 */,
@@ -221,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0B951E61D0C5C8C00B19CAF /* GraphicObject.m in Sources */,
 				F0A09B651CF3EF4000970E27 /* Calculator.m in Sources */,
 				F074DE541CFDF1D2006C923B /* Fraction1.m in Sources */,
 				F039DF751D0AEEBA00C31549 /* Fraction2.m in Sources */,
