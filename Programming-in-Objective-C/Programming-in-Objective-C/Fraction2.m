@@ -9,9 +9,22 @@
 #import <Foundation/Foundation.h>
 #import "Fraction2.h"
 
+static int gCounter;
+
 @implementation Fraction2
 
 @synthesize numerator,denominator;
+
++(Fraction2 *) allocF
+{
+    ++gCounter;
+    return [Fraction2 alloc];
+}
+
++(int) count
+{
+    return gCounter;
+}
 
 -(Fraction2 *) initWith: (int) n :(int) d
 {
@@ -31,6 +44,12 @@
 -(void) print
 {
     NSLog(@"%i/%i",numerator,denominator);
+}
+
+-(void) setGlobalVariable: (int) v
+{
+    extern int global_v;
+    global_v = v;
 }
 
 @end

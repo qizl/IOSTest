@@ -9,14 +9,14 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Programming-in-Objective-C/main.m"
-            timestampString = "487256483.06614"
+            filePath = "Programming-in-Objective-C/Fraction1.m"
+            timestampString = "486834233.42381"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
-            landmarkName = "main()"
-            landmarkType = "7">
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "-paraTest:::"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Programming-in-Objective-C/Fraction1.m"
-            timestampString = "486834233.42381"
+            filePath = "Programming-in-Objective-C/Fraction2.m"
+            timestampString = "487324447.807978"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "-paraTest:::"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "+count"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

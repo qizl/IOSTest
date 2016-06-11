@@ -17,6 +17,8 @@
 #import "Complex.h"
 #import "Fraction2.h"
 
+int global_v = 1;
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // Chapter 3
@@ -155,12 +157,35 @@ int main(int argc, const char * argv[]) {
         //        @throw [NSException exceptionWithName:@"throw an exception" reason:@"te a st" userInfo:nil];
         
         // Chapter 10
-        Fraction2 *a, *b;
-        a=[[Fraction2 alloc] initWith:1 :3];
-        b=[[Fraction2 alloc] initWith:3 :7];
+        // 1
+        //        Fraction2 *a, *b;
+        //        a=[[Fraction2 alloc] initWith:1 :3];
+        //        b=[[Fraction2 alloc] initWith:3 :7];
+        //
+        //        [a print];
+        //        [b print];
         
-        [a print];
-        [b print];
+        // 2
+        //        NSLog(@"a global variable: %i", global_v);
+        //
+        //        global_v = 123;
+        //        NSLog(@"a global variable: %i", global_v);
+        //
+        //        Fraction2 *f=[Fraction2 new];
+        //        [f setGlobalVariable:12];
+        //        NSLog(@"a global variable: %i", global_v);
+        //
+        //        [f setGlobalVariable:112];
+        //        NSLog(@"a global variable: %i", global_v);
+        
+        // 3
+        Fraction2 *a, *b, *c;
+        NSLog (@"Fractions allocated: %i",[Fraction2 count]);
+        
+        a = [[Fraction2 allocF] init];
+        b = [[Fraction2 allocF] init];
+        c = [[Fraction2 allocF] init];
+        NSLog (@"Fractions allocated: %i",[Fraction2 count]);
     }
     return 0;
 }
@@ -176,3 +201,4 @@ int main(int argc, const char * argv[]) {
 
 
 
+	

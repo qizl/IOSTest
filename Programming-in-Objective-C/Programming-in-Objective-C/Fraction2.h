@@ -13,8 +13,11 @@
 
 @property int numerator,denominator;
 
++(Fraction2 *) allocF;
++(int) count;
 -(Fraction2 *) initWith:(int) n: (int) d;
 -(void) print;
 -(void) setTo:(int) n :(int)d;
+-(void) setGlobalVariable: (int) v;
 
 @end
