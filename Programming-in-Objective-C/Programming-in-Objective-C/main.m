@@ -165,7 +165,7 @@ int main(int argc, const char * argv[]) {
         //        [a print];
         //        [b print];
         
-        // 2
+        // 2.全局变量
         //        NSLog(@"a global variable: %i", global_v);
         //
         //        global_v = 123;
@@ -178,14 +178,26 @@ int main(int argc, const char * argv[]) {
         //        [f setGlobalVariable:112];
         //        NSLog(@"a global variable: %i", global_v);
         
-        // 3
-        Fraction2 *a, *b, *c;
-        NSLog (@"Fractions allocated: %i",[Fraction2 count]);
+        // 3.静态变量
+        //        Fraction2 *a, *b, *c;
+        //        NSLog (@"Fractions allocated: %i",[Fraction2 count]);
+        //
+        //        a = [[Fraction2 allocF] init];
+        //        b = [[Fraction2 allocF] init];
+        //        c = [[Fraction2 allocF] init];
+        //        NSLog (@"Fractions allocated: %i",[Fraction2 count]);
         
-        a = [[Fraction2 allocF] init];
-        b = [[Fraction2 allocF] init];
-        c = [[Fraction2 allocF] init];
-        NSLog (@"Fractions allocated: %i",[Fraction2 count]);
+        // 4.枚举
+        //        enum fruit { apple=1, banana};
+        //        enum fruit f1 = apple;
+        //        NSLog(@"%i",f1);
+        
+        // 5.typedef
+        //        typedef int Counter;
+        //        Counter i=1;
+        //
+        //        typedef enum  { east, west, south, north } Direction;
+        //        Direction step1, step2;
     }
     return 0;
 }
