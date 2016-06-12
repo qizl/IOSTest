@@ -263,18 +263,30 @@ int main(int argc, const char * argv[]) {
         //        printFoo();
         
         // 4.结构
-        //struct date
-        //{
-        //    int month;
-        //    int day;
-        //    int year;
-        //};
-        //struct date today;
-        //today.year=2016;
-        //today.month=6;
-        //today.day=12;
-        //
-        //struct date today1 = {6,12,2016};
+        struct date
+        {
+            int month;
+            int day;
+            int year;
+        };
+        struct date today;
+        today.year=2016;
+        today.month=6;
+        today.day=12;
+        
+        struct date today1 = {6,12,2016};
+        
+        // 5.指针
+        int count = 10, x, *intPtr;
+        intPtr = &count;
+        x = *intPtr;
+        NSLog(@"count = %i, x = %i", count, x);
+        
+        struct date *datePtr = &today1;
+        (*datePtr).day=12;
+        datePtr -> month = 6;
+        datePtr -> year = 2016;
+        NSLog(@"date is %i/%i/%i",datePtr->month, datePtr->day, datePtr->year);
     }
     return 0;
 }
