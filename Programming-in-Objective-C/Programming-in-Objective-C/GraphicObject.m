@@ -7,22 +7,3 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GraphicObject.h"
-
-@implementation GraphicObject
-
-
--(void) paint
-{
-    NSLog(@"paint !");
-}
--(void) erase
-{
-    NSLog(@"erase !");
-}
--(void) outline
-{
-    NSLog(@"outline !");
-}
-
-@end

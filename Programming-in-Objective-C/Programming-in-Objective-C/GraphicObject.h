@@ -6,12 +6,8 @@
 //  Copyright © 2016年 qizl. All rights reserved.
 //
 
-#import "Drawing.h"
+#ifndef GraphicObject_h
+#define GraphicObject_h
 
-@interface GraphicObject : NSObject<Drawing>
 
--(void) paint;
--(void) erase;
--(void) outline;
-
-@end
+#endif /* GraphicObject_h */

@@ -200,7 +200,6 @@ int main(int argc, const char * argv[]) {
         //
         //        typedef enum  { east, west, south, north } Direction;
         //        Direction step1, step2;
-        
         // Chapter 11
         GraphicObject *g = [GraphicObject new];
         [g paint];
