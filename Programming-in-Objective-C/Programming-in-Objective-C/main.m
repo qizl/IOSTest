@@ -200,14 +200,15 @@ int main(int argc, const char * argv[]) {
         //
         //        typedef enum  { east, west, south, north } Direction;
         //        Direction step1, step2;
-        // Chapter 11
+        
+        // Chapter 11        
+        Fraction2 *f2Ext = [Fraction2 new];
+        [f2Ext ext];
+        
         GraphicObject *g = [GraphicObject new];
         [g paint];
         [g erase];
         [g outline];
-        
-        Fraction2 *f2Ext = [Fraction2 new];
-        [f2Ext ext];
     }
     return 0;
 }
