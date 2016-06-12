@@ -201,14 +201,15 @@ int main(int argc, const char * argv[]) {
         //        typedef enum  { east, west, south, north } Direction;
         //        Direction step1, step2;
         
-        // Chapter 11        
+        // Chapter 11,12
         Fraction2 *f2Ext = [Fraction2 new];
         [f2Ext ext];
-        
+#ifdef iPad
         GraphicObject *g = [GraphicObject new];
         [g paint];
         [g erase];
         [g outline];
+#endif
     }
     return 0;
 }
