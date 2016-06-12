@@ -21,6 +21,12 @@
 
 int global_v = 1;
 
+
+void printMessage(void)
+{
+    NSLog(@"Programming is fun.");
+}
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // Chapter 3
@@ -202,14 +208,73 @@ int main(int argc, const char * argv[]) {
         //        Direction step1, step2;
         
         // Chapter 11,12
-        Fraction2 *f2Ext = [Fraction2 new];
-        [f2Ext ext];
-#ifdef iPad
-        GraphicObject *g = [GraphicObject new];
-        [g paint];
-        [g erase];
-        [g outline];
-#endif
+        //        Fraction2 *f2Ext = [Fraction2 new];
+        //        [f2Ext ext];
+        //#ifdef iPad
+        //        GraphicObject *g = [GraphicObject new];
+        //        [g paint];
+        //        [g erase];
+        //        [g outline];
+        //#endif
+        
+        // Chapter 13
+        // 1.数组
+        //int Fibonacci[15], i;
+        //
+        //Fibonacci[0] = 0;
+        //Fibonacci[1] = 1;
+        //
+        //for(i=2;i<15;++i)
+        //    Fibonacci[i] = Fibonacci[i-2] + Fibonacci[i-1];
+        //
+        //for(i=0;i<15;++i)
+        //    NSLog(@"%i",Fibonacci[i]);
+        //
+        //int integers[5] = {0,1,2,3,4};
+        //
+        //int x = 1233;
+        //int a[] = {[0]=1,[1]=x-1,[3]=x+2};
+        //for(int j=0;j<5;j++)
+        //    NSLog(@"%i",a[j]);
+        //
+        //char word[] = {'h','e','l','l','o','!'};
+        //NSLog(@"%s",word);
+        
+        // 2.函数
+        //        printMessage();
+        
+        // 3.块
+        //        void (^printMessage)(void) =
+        //        ^(void)
+        //        {
+        //            NSLog(@"Programming is fun!");
+        //        };
+        //        printMessage();
+        //
+        //        int foo = 10;
+        //        __block int foo1=10;
+        //        void (^printFoo) (void) =
+        //        ^(void)
+        //        {
+        //            NSLog(@"foo = %i, and foo1 = %i",foo, foo1);
+        //        };
+        //        foo = 15;
+        //        foo1 = 15;
+        //        printFoo();
+        
+        // 4.结构
+        //struct date
+        //{
+        //    int month;
+        //    int day;
+        //    int year;
+        //};
+        //struct date today;
+        //today.year=2016;
+        //today.month=6;
+        //today.day=12;
+        //
+        //struct date today1 = {6,12,2016};
     }
     return 0;
 }
@@ -225,4 +290,3 @@ int main(int argc, const char * argv[]) {
 
 
 
-	
