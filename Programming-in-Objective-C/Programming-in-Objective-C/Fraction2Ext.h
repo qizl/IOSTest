@@ -6,8 +6,10 @@
 //  Copyright © 2016年 qizl. All rights reserved.
 //
 
-#ifndef Fraction2Ext_h
-#define Fraction2Ext_h
+#import "Fraction2.h"
 
+@interface Fraction2 (Fraction2Ext)
 
-#endif /* Fraction2Ext_h */
+-(void) ext;
+
+@end

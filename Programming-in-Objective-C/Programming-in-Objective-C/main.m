@@ -17,6 +17,7 @@
 #import "Complex.h"
 #import "Fraction2.h"
 #import "GraphicObject.h"
+#import "Fraction2Ext.h"
 
 int global_v = 1;
 
@@ -205,6 +206,9 @@ int main(int argc, const char * argv[]) {
         [g paint];
         [g erase];
         [g outline];
+        
+        Fraction2 *f2Ext = [Fraction2 new];
+        [f2Ext ext];
     }
     return 0;
 }

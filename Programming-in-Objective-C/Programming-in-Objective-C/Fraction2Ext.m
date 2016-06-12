@@ -7,3 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Fraction2Ext.h"
+
+@implementation Fraction2 (Fraction2Ext)
+
+-(void) ext
+{
+    NSLog(@"from Fraction2Ext !");
+}
+
+@end
