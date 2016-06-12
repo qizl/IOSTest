@@ -1,4 +1,4 @@
-// !$*UTF8*$!
+﻿// !$*UTF8*$!
 {
 	archiveVersion = 1;
 	classes = {
@@ -17,7 +17,6 @@
 		F0A09B601CF3ECF200970E27 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A09B5F1CF3ECF200970E27 /* Fraction.m */; };
 		F0A09B651CF3EF4000970E27 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = F0A09B641CF3EF4000970E27 /* Calculator.m */; };
 		F0B951E61D0C5C8C00B19CAF /* GraphicObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B951E51D0C5C8C00B19CAF /* GraphicObject.m */; };
-		F0B719451D0C138F00E67645 /* Fraction2Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B719441D0C138F00E67645 /* Fraction2Ext.m */; };
 		F0BD2AC61CF3D8F5002B2745 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BD2AC51CF3D8F5002B2745 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +54,6 @@
 		F0B951E31D0C5BC900B19CAF /* Drawing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Drawing.h; sourceTree = "<group>"; };
 		F0B951E41D0C5C3F00B19CAF /* GraphicObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphicObject.h; sourceTree = "<group>"; };
 		F0B951E51D0C5C8C00B19CAF /* GraphicObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicObject.m; sourceTree = "<group>"; };
-		F0B719431D0C133E00E67645 /* Fraction2Ext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fraction2Ext.h; sourceTree = "<group>"; };
-		F0B719441D0C138F00E67645 /* Fraction2Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction2Ext.m; sourceTree = "<group>"; };
 		F0BD2AC21CF3D8F5002B2745 /* Programming-in-Objective-C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Programming-in-Objective-C"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BD2AC51CF3D8F5002B2745 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0BD2ADF1CF3E156002B2745 /* demo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = demo; sourceTree = "<group>"; };
@@ -146,11 +143,6 @@
 				F0B951E31D0C5BC900B19CAF /* Drawing.h */,
 				F0B951E41D0C5C3F00B19CAF /* GraphicObject.h */,
 				F0B951E51D0C5C8C00B19CAF /* GraphicObject.m */,
-		F0B719421D0C130100E67645 /* Chapter11 */ = {
-			isa = PBXGroup;
-			children = (
-				F0B719431D0C133E00E67645 /* Fraction2Ext.h */,
-				F0B719441D0C138F00E67645 /* Fraction2Ext.m */,
 			);
 			name = Chapter11;
 			sourceTree = "<group>";
@@ -176,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				F0B951E21D0C5AEF00B19CAF /* Chapter11 */,
-				F0B719421D0C130100E67645 /* Chapter11 */,
 				F039DF721D0AEE6600C31549 /* Chapter10 */,
 				F0739F211D085BA400E76A13 /* Chapter9 */,
 				F06C609A1D047AA2004F1C42 /* Chapter8 */,
@@ -254,7 +245,6 @@
 				F0A09B601CF3ECF200970E27 /* Fraction.m in Sources */,
 				F09EB0A31CF601690090D4EB /* TraingularNum.m in Sources */,
 				F06C609D1D047D8B004F1C42 /* Rectangle.m in Sources */,
-				F0B719451D0C138F00E67645 /* Fraction2Ext.m in Sources */,
 				F0739F241D085C7300E76A13 /* Complex.m in Sources */,
 				F06C60A31D048316004F1C42 /* XYPoint.m in Sources */,
 			);
