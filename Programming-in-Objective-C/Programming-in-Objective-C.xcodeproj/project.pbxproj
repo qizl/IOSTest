@@ -343,6 +343,11 @@
 		F0BD2ACA1CF3D8F5002B2745 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					iPad,
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
