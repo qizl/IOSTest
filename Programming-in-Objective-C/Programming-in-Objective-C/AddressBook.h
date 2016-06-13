@@ -6,8 +6,17 @@
 //  Copyright © 2016年 qizl. All rights reserved.
 //
 
-#ifndef AddressBook_h
-#define AddressBook_h
+#import "AddressCard.h"
 
+@interface AddressBook : NSObject
 
-#endif /* AddressBook_h */
+@property (nonatomic, copy) NSString *bookName;
+@property (nonatomic, strong) NSMutableArray *book;
+
+-(id) initWithName: (NSString *) name;
+-(void) addCard: (AddressCard *) theCard;
+-(int) entries;
+-(void) list;
+-(AddressCard *) lookup: (NSString *) theName;
+
+@end

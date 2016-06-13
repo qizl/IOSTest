@@ -18,6 +18,8 @@
 #import "Fraction2.h"
 #import "GraphicObject.h"
 #import "Fraction2Ext.h"
+#import "AddressCard.h"
+#import "AddressBook.h"
 
 int global_v = 1;
 
@@ -290,11 +292,61 @@ int main(int argc, const char * argv[]) {
         
         // Chapter 15
         // 2.字符串对象
-        NSString *str=@"hello world!";
-        NSLog(@"%@",str);
+        //        NSString *str=@"hello world!";
+        //        NSLog(@"%@",str);
+        //
+        //        NSNumber *intNumber = [NSNumber numberWithInt:123];
+        //        NSLog(@"%@",intNumber);
         
-        NSNumber *intNumber = [NSNumber numberWithInt:123];
-        NSLog(@"%@",intNumber);
+        // 3.制作地址簿
+        NSString *aName = @"Julia Kochan";
+        NSString *aEmail = @"jewis337@axlc.com";
+        NSString *bName = @"Tony Iannino";
+        NSString *bEmail = @"tony.iannino@techfitness.com";
+        NSString *cName = @"Stephen Kochan";
+        NSString *cEmail = @"steve@classroomM.com";
+        NSString *dName = @"Jamie Baker";
+        NSString *dEmail = @"jbaker@classroomM.com";
+        
+        AddressCard *card1 = [AddressCard new];
+        AddressCard *card2 = [AddressCard new];
+        AddressCard *card3 = [AddressCard new];
+        AddressCard *card4 = [AddressCard new];
+        
+        AddressBook *myBook = [[AddressBook alloc] initWithName: @"Linda's Address Book"];
+        NSLog(@"Entries in address book after creation: %i", [myBook entries]);
+        
+        //        [card1 setName: aName];
+        //        [card1 setEmail: aEmail];
+        [card1 set:aName: aEmail];
+        [card2 set:bName: bEmail];
+        [card3 set:cName: cEmail];
+        [card4 set:dName: dEmail];
+        
+        //        [card1 print];
+        //        [card2 print];
+        
+        [myBook addCard:card1];
+        [myBook addCard:card2];
+        [myBook addCard:card3];
+        [myBook addCard:card4];
+        
+        NSLog(@"Entries in address book after adding cards: %i",[myBook entries]);
+        [myBook list];
+        
+        NSLog(@"Stephen Kochan");
+        AddressCard *myCard = [myBook lookup:@"stephen kochan"];
+        if(myCard != nil)
+            [myCard print];
+        else
+            NSLog(@"Not found!");
+        
+        NSLog(@"Stephen Kochan1");
+        AddressCard *myCard1 = [myBook lookup:@"stephen kochan1"];
+        if(myCard1 != nil)
+            [myCard1 print];
+        else
+            NSLog(@"Not found!");
     }
     return 0;
 }

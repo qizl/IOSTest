@@ -6,8 +6,16 @@
 //  Copyright © 2016年 qizl. All rights reserved.
 //
 
-#ifndef AddressCard_h
-#define AddressCard_h
+@interface AddressCard : NSObject
 
+//-(void) setName: (NSString *) theName;
+//-(void) setEmail: (NSString *) theEmail;
+//-(NSString *) name;
+//-(NSString *) email;
 
-#endif /* AddressCard_h */
+@property (copy, nonatomic) NSString *name, *email;
+
+-(void) set:(NSString *) name: (NSString *) email;
+-(void) print;
+
+@end
