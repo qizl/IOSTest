@@ -263,30 +263,38 @@ int main(int argc, const char * argv[]) {
         //        printFoo();
         
         // 4.结构
-        struct date
-        {
-            int month;
-            int day;
-            int year;
-        };
-        struct date today;
-        today.year=2016;
-        today.month=6;
-        today.day=12;
-        
-        struct date today1 = {6,12,2016};
+        //        struct date
+        //        {
+        //            int month;
+        //            int day;
+        //            int year;
+        //        };
+        //        struct date today;
+        //        today.year=2016;
+        //        today.month=6;
+        //        today.day=12;
+        //        
+        //        struct date today1 = {6,12,2016};
         
         // 5.指针
-        int count = 10, x, *intPtr;
-        intPtr = &count;
-        x = *intPtr;
-        NSLog(@"count = %i, x = %i", count, x);
+        //        int count = 10, x, *intPtr;
+        //        intPtr = &count;
+        //        x = *intPtr;
+        //        NSLog(@"count = %i, x = %i", count, x);
+        //
+        //        struct date *datePtr = &today1;
+        //        (*datePtr).day=12;
+        //        datePtr -> month = 6;
+        //        datePtr -> year = 2016;
+        //        NSLog(@"date is %i/%i/%i",datePtr->month, datePtr->day, datePtr->year);
         
-        struct date *datePtr = &today1;
-        (*datePtr).day=12;
-        datePtr -> month = 6;
-        datePtr -> year = 2016;
-        NSLog(@"date is %i/%i/%i",datePtr->month, datePtr->day, datePtr->year);
+        // Chapter 15
+        // 2.字符串对象
+        NSString *str=@"hello world!";
+        NSLog(@"%@",str);
+        
+        NSNumber *intNumber = [NSNumber numberWithInt:123];
+        NSLog(@"%@",intNumber);
     }
     return 0;
 }
