@@ -16,6 +16,7 @@
 @property (copy, nonatomic) NSString *name, *email;
 
 -(void) set:(NSString *) name: (NSString *) email;
+-(BOOL) isEqual: (AddressCard *) theCard;
 -(void) print;
 
 @end

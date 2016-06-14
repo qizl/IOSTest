@@ -36,6 +36,12 @@
     [book addObject:theCard];
 }
 
+-(void) removeCard: (AddressCard *) theCard
+{
+    //    [book removeObjectIdenticalTo: theCard];
+    [book removeObject:theCard];
+}
+
 -(int) entries
 {
     return (int)[book count];
