@@ -275,7 +275,7 @@ int main(int argc, const char * argv[]) {
         //        today.year=2016;
         //        today.month=6;
         //        today.day=12;
-        //        
+        //
         //        struct date today1 = {6,12,2016};
         
         // 5.指针
@@ -347,6 +347,11 @@ int main(int argc, const char * argv[]) {
             [myCard1 print];
         else
             NSLog(@"Not found!");
+        
+        [myBook removeCard:myCard];
+        
+        NSLog(@"Entries in address book after removing %@: %i",[myCard name],[myBook entries]);
+        [myBook list];
     }
     return 0;
 }
