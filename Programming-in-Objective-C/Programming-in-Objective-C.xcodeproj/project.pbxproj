@@ -54,6 +54,7 @@
 		F0739F231D085C7300E76A13 /* Complex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Complex.m; sourceTree = "<group>"; };
 		F074DE521CFDF079006C923B /* Fraction1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fraction1.h; sourceTree = "<group>"; };
 		F074DE531CFDF1D2006C923B /* Fraction1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction1.m; sourceTree = "<group>"; };
+		F088C2971D10679D004CB0DE /* testfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testfile; sourceTree = "<group>"; };
 		F09EB0A11CF5FFB20090D4EB /* TraingularNum.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TraingularNum.h; sourceTree = "<group>"; };
 		F09EB0A21CF601690090D4EB /* TraingularNum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TraingularNum.m; sourceTree = "<group>"; };
 		F0A09B5F1CF3ECF200970E27 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
@@ -207,6 +208,7 @@
 				F0A09B661CF3EFC600970E27 /* Chapter3 */,
 				F0A09B621CF3EEE400970E27 /* Chapter4 */,
 				F0BD2AC51CF3D8F5002B2745 /* main.m */,
+				F088C2971D10679D004CB0DE /* testfile */,
 			);
 			path = "Programming-in-Objective-C";
 			sourceTree = "<group>";

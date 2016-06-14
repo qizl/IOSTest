@@ -299,59 +299,86 @@ int main(int argc, const char * argv[]) {
         //        NSLog(@"%@",intNumber);
         
         // 3.制作地址簿
-        NSString *aName = @"Julia Kochan";
-        NSString *aEmail = @"jewis337@axlc.com";
-        NSString *bName = @"Tony Iannino";
-        NSString *bEmail = @"tony.iannino@techfitness.com";
-        NSString *cName = @"Stephen Kochan";
-        NSString *cEmail = @"steve@classroomM.com";
-        NSString *dName = @"Jamie Baker";
-        NSString *dEmail = @"jbaker@classroomM.com";
+        //        NSString *aName = @"Julia Kochan";
+        //        NSString *aEmail = @"jewis337@axlc.com";
+        //        NSString *bName = @"Tony Iannino";
+        //        NSString *bEmail = @"tony.iannino@techfitness.com";
+        //        NSString *cName = @"Stephen Kochan";
+        //        NSString *cEmail = @"steve@classroomM.com";
+        //        NSString *dName = @"Jamie Baker";
+        //        NSString *dEmail = @"jbaker@classroomM.com";
+        //
+        //        AddressCard *card1 = [AddressCard new];
+        //        AddressCard *card2 = [AddressCard new];
+        //        AddressCard *card3 = [AddressCard new];
+        //        AddressCard *card4 = [AddressCard new];
+        //
+        //        AddressBook *myBook = [[AddressBook alloc] initWithName: @"Linda's Address Book"];
+        //        NSLog(@"Entries in address book after creation: %i", [myBook entries]);
+        //
+        //        //        [card1 setName: aName];
+        //        //        [card1 setEmail: aEmail];
+        //        [card1 set:aName: aEmail];
+        //        [card2 set:bName: bEmail];
+        //        [card3 set:cName: cEmail];
+        //        [card4 set:dName: dEmail];
+        //
+        //        //        [card1 print];
+        //        //        [card2 print];
+        //
+        //        [myBook addCard:card1];
+        //        [myBook addCard:card2];
+        //        [myBook addCard:card3];
+        //        [myBook addCard:card4];
+        //
+        //        NSLog(@"Entries in address book after adding cards: %i",[myBook entries]);
+        //        [myBook list];
+        //
+        //        NSLog(@"Stephen Kochan");
+        //        AddressCard *myCard = [myBook lookup:@"stephen kochan"];
+        //        if(myCard != nil)
+        //            [myCard print];
+        //        else
+        //            NSLog(@"Not found!");
+        //
+        //        NSLog(@"Stephen Kochan1");
+        //        AddressCard *myCard1 = [myBook lookup:@"stephen kochan1"];
+        //        if(myCard1 != nil)
+        //            [myCard1 print];
+        //        else
+        //            NSLog(@"Not found!");
+        //        
+        //        [myBook removeCard:myCard];
+        //        
+        //        NSLog(@"Entries in address book after removing %@: %i",[myCard name],[myBook entries]);
+        //        [myBook list];
         
-        AddressCard *card1 = [AddressCard new];
-        AddressCard *card2 = [AddressCard new];
-        AddressCard *card3 = [AddressCard new];
-        AddressCard *card4 = [AddressCard new];
+        // 4.词典对象
+        //        NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+        //        [dic setObject: @"apple" forKey:@"a"];
+        //        [dic setObject: @"boy" forKey:@"b"];
+        //        [dic setObject: @"cat" forKey:@"c"];
+        //        NSLog(@"%@", [dic objectForKey: @"a"]);
+        //        NSLog(@"%@", dic);
+        //
+        //        NSDictionary *dic1 = [NSDictionary dictionaryWithObjectsAndKeys:@"dog",@"d",@"egg",@"e",@"fox",@"f", nil];
+        //        NSLog(@"%@", dic1);
         
-        AddressBook *myBook = [[AddressBook alloc] initWithName: @"Linda's Address Book"];
-        NSLog(@"Entries in address book after creation: %i", [myBook entries]);
-        
-        //        [card1 setName: aName];
-        //        [card1 setEmail: aEmail];
-        [card1 set:aName: aEmail];
-        [card2 set:bName: bEmail];
-        [card3 set:cName: cEmail];
-        [card4 set:dName: dEmail];
-        
-        //        [card1 print];
-        //        [card2 print];
-        
-        [myBook addCard:card1];
-        [myBook addCard:card2];
-        [myBook addCard:card3];
-        [myBook addCard:card4];
-        
-        NSLog(@"Entries in address book after adding cards: %i",[myBook entries]);
-        [myBook list];
-        
-        NSLog(@"Stephen Kochan");
-        AddressCard *myCard = [myBook lookup:@"stephen kochan"];
-        if(myCard != nil)
-            [myCard print];
-        else
-            NSLog(@"Not found!");
-        
-        NSLog(@"Stephen Kochan1");
-        AddressCard *myCard1 = [myBook lookup:@"stephen kochan1"];
-        if(myCard1 != nil)
-            [myCard1 print];
-        else
-            NSLog(@"Not found!");
-        
-        [myBook removeCard:myCard];
-        
-        NSLog(@"Entries in address book after removing %@: %i",[myCard name],[myBook entries]);
-        [myBook list];
+        // Chapter 16
+        //        NSString *fName = @"/users/qizl/projects/Programming-in-Objective-C-Practise/Programming-in-Objective-C/testfile";
+        //        NSFileManager *fm = [NSFileManager defaultManager];
+        //
+        //        NSLog(@"current path: %@", [fm currentDirectoryPath]);
+        //
+        //        if([fm fileExistsAtPath:fName] == NO)
+        //        {
+        //            NSLog(@"File doesn't exist!");
+        //            return 1;
+        //        }
+        //        else
+        //        {
+        //            NSLog(@"content of %@: %@", fName, [NSString stringWithContentsOfFile:fName encoding:NSUTF8StringEncoding error:NULL]);
+        //        }
     }
     return 0;
 }
