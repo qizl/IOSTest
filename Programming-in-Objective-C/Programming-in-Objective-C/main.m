@@ -365,20 +365,21 @@ int main(int argc, const char * argv[]) {
         //        NSLog(@"%@", dic1);
         
         // Chapter 16
+        NSString *fName = @"/users/qizl/documents/projects/Programming-in-Objective-C-Practise/Programming-in-Objective-C/testfile";
         //        NSString *fName = @"/users/qizl/projects/Programming-in-Objective-C-Practise/Programming-in-Objective-C/testfile";
-        //        NSFileManager *fm = [NSFileManager defaultManager];
-        //
-        //        NSLog(@"current path: %@", [fm currentDirectoryPath]);
-        //
-        //        if([fm fileExistsAtPath:fName] == NO)
-        //        {
-        //            NSLog(@"File doesn't exist!");
-        //            return 1;
-        //        }
-        //        else
-        //        {
-        //            NSLog(@"content of %@: %@", fName, [NSString stringWithContentsOfFile:fName encoding:NSUTF8StringEncoding error:NULL]);
-        //        }
+        NSFileManager *fm = [NSFileManager defaultManager];
+        
+        NSLog(@"current path: %@", [fm currentDirectoryPath]);
+        
+        if([fm fileExistsAtPath:fName] == NO)
+        {
+            NSLog(@"File doesn't exist!");
+            return 1;
+        }
+        else
+        {
+            NSLog(@"content of %@: %@", fName, [NSString stringWithContentsOfFile:fName encoding:NSUTF8StringEncoding error:NULL]);
+        }
     }
     return 0;
 }
