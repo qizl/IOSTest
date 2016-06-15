@@ -365,21 +365,54 @@ int main(int argc, const char * argv[]) {
         //        NSLog(@"%@", dic1);
         
         // Chapter 16
-        NSString *fName = @"/users/qizl/documents/projects/Programming-in-Objective-C-Practise/Programming-in-Objective-C/testfile";
-        //        NSString *fName = @"/users/qizl/projects/Programming-in-Objective-C-Practise/Programming-in-Objective-C/testfile";
-        NSFileManager *fm = [NSFileManager defaultManager];
+        //        NSString *fName = @"/users/qizl/documents/projects/Programming-in-Objective-C-Practise/Programming-in-Objective-C/testfile";
+        //        //        NSString *fName = @"/users/qizl/projects/Programming-in-Objective-C-Practise/Programming-in-Objective-C/testfile";
+        //        NSFileManager *fm = [NSFileManager defaultManager];
+        //
+        //        NSLog(@"current path: %@", [fm currentDirectoryPath]);
+        //
+        //        if([fm fileExistsAtPath:fName] == NO)
+        //        {
+        //            NSLog(@"File doesn't exist!");
+        //            return 1;
+        //        }
+        //        else
+        //        {
+        //            NSLog(@"content of %@: %@", fName, [NSString stringWithContentsOfFile:fName encoding:NSUTF8StringEncoding error:NULL]);
+        //        }
         
-        NSLog(@"current path: %@", [fm currentDirectoryPath]);
+        // Chapter 18
+        // 2.浅复制与深复制
+        //        NSMutableArray *dataArray = [NSMutableArray arrayWithObjects:
+        //                                     [NSMutableString stringWithString: @"one"],
+        //                                     [NSMutableString stringWithString: @"two"],
+        //                                     [NSMutableString stringWithString: @"three"],nil];
+        //        NSMutableArray *dataArray2;
+        //        NSMutableString *mStr;
+        //
+        //        NSLog(@"dataArray: %@", dataArray);
+        //
+        //        dataArray2 = [dataArray mutableCopy];
+        //
+        //        mStr = [dataArray objectAtIndex: 0];
+        //        [mStr appendString: @"ONE"];
+        //
+        //        NSLog(@"dataArray: %@", dataArray);
+        //        NSLog(@"dataArray2: %@", dataArray2);
         
-        if([fm fileExistsAtPath:fName] == NO)
-        {
-            NSLog(@"File doesn't exist!");
-            return 1;
-        }
-        else
-        {
-            NSLog(@"content of %@: %@", fName, [NSString stringWithContentsOfFile:fName encoding:NSUTF8StringEncoding error:NULL]);
-        }
+        // 3.实现<NSCopying>协议
+        Fraction *f1 = [Fraction new];
+        Fraction *f2;
+        
+        [f1 setNumerator:2];
+        [f1 setDenominator:3];
+        
+        f2 = [f1 copy]; // f2 = f1;
+        [f2 setNumerator:1];
+        [f2 setDenominator:3];
+        
+        [f1 print];
+        [f2 print];
     }
     return 0;
 }

@@ -40,4 +40,14 @@
     return denominator;
 }
 
+-(id) copyWithZone: (NSZone *) zone
+{
+    //    Fraction *newFract = [[Fraction allocWithZone: zone] init];
+    id newFract = [[[self class] allocWithZone: zone] init]; // copy child
+    
+    [newFract setNumerator:numerator];
+    [newFract setDenominator:denominator];
+    return newFract;
+}
+
 @end
