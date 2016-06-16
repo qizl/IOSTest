@@ -467,6 +467,66 @@ int main(int argc, const char * argv[]) {
         //        [abRead list];
         
         // 4.使用NSData 创建自定义档案
+        //        NSString *aName = @"Julia Kochan";
+        //        NSString *aEmail = @"jewis337@axlc.com";
+        //        NSString *bName = @"Tony Iannino";
+        //        NSString *bEmail = @"tony.iannino@techfitness.com";
+        //        NSString *cName = @"Stephen Kochan";
+        //        NSString *cEmail = @"steve@classroomM.com";
+        //        NSString *dName = @"Jamie Baker";
+        //        NSString *dEmail = @"jbaker@classroomM.com";
+        //
+        //        AddressCard *card1 = [AddressCard new];
+        //        AddressCard *card2 = [AddressCard new];
+        //        AddressCard *card3 = [AddressCard new];
+        //        AddressCard *card4 = [AddressCard new];
+        //        [card1 set:aName: aEmail];
+        //        [card2 set:bName: bEmail];
+        //        [card3 set:cName: cEmail];
+        //        [card4 set:dName: dEmail];
+        //
+        //        AddressBook *myBook = [[AddressBook alloc] initWithName: @"Linda's Address Book"];
+        //        [myBook addCard:card1];
+        //        [myBook addCard:card2];
+        //        [myBook addCard:card3];
+        //        [myBook addCard:card4];
+        //
+        //        NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"apple",@"a",@"boy",@"b",@"cat",@"c",@"dog",@"d",@"egg",@"e",@"fox",@"f", nil];
+        //
+        //        NSMutableData *dataArea = [NSMutableData data];
+        //        NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:dataArea];
+        //        [archiver encodeObject:myBook forKey:@"addressbook"];
+        //        [archiver encodeObject:dic forKey:@"dic"];
+        //        [archiver finishEncoding];
+        //
+        //        NSString *customArchiveFilePath = @"/users/qizl/projects/Programming-in-Objective-C-Practise/Programming-in-Objective-C/customArchiveFilePath";
+        //        if([dataArea writeToFile:customArchiveFilePath atomically:YES] == NO)
+        //            NSLog(@"archiving failed!");
+        //
+        //        NSData *dataArea1 = [NSData dataWithContentsOfFile:customArchiveFilePath];
+        //        if(! dataArea1)
+        //        {
+        //            NSLog(@"can't read back archive file!");
+        //            return 1;
+        //        }
+        //
+        //        NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:dataArea1];
+        //        AddressBook *abRead = [unarchiver decodeObjectForKey:@"addressbook"];
+        //        NSDictionary *dicRead = [unarchiver decodeObjectForKey:@"dic"];
+        //        [unarchiver finishDecoding];
+        //        [abRead list];
+        //        NSLog(@"%@",dicRead);
+        
+        // 5.使用归档程序复制对象
+        NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithObjectsAndKeys:@"apple",@"a",@"boy",@"b",@"cat",@"c",@"dog",@"d",@"egg",@"e",@"fox",@"f", nil];
+        
+        //        NSData *data = [NSKeyedArchiver archivedDataWithRootObject:dic];
+        //        NSMutableDictionary *dic1 = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        NSMutableDictionary *dic1 = [NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:dic]];
+        [dic1 setObject:@"glass" forKey:@"g"];
+        
+        NSLog(@"%@",dic);
+        NSLog(@"%@",dic1);
     }
     return 0;
 }
