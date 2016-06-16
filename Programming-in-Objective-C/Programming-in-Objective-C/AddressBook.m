@@ -66,4 +66,20 @@
     return nil;
 }
 
+-(void) encodeWithCoder:(NSCoder *)aCoder
+{
+    //    [super encodeWithCoder:aCoder];
+    
+    [aCoder encodeObject:bookName forKey:@"bcBookName"];
+    [aCoder encodeObject:book forKey:@"bcBook"];
+}
+
+-(id) initWithCoder:(NSCoder *)aDecoder
+{
+    //    [super initWithCoder:aDecoder];
+    bookName = [aDecoder decodeObjectForKey:@"bcBookName"];
+    book = [aDecoder decodeObjectForKey:@"bcBook"];
+    return self;
+}
+
 @end

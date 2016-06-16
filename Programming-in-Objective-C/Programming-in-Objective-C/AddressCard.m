@@ -66,4 +66,21 @@
     NSLog(@"|        O       <^>        O         |");
     NSLog(@"=======================================");
 }
+
+-(void) encodeWithCoder:(NSCoder *)aCoder
+{
+    //    [super encodeWithCoder:aCoder];
+    
+    [aCoder encodeObject:name forKey:@"acName"];
+    [aCoder encodeObject:email forKey:@"acEmail"];
+}
+
+-(id) initWithCoder:(NSCoder *)aDecoder
+{
+    //    [super initWithCoder:aDecoder];
+    name = [aDecoder decodeObjectForKey:@"acName"];
+    email = [aDecoder decodeObjectForKey:@"acEmail"];
+    return self;
+}
+
 @end

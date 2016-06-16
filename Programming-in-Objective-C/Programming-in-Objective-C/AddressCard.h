@@ -6,7 +6,7 @@
 //  Copyright © 2016年 qizl. All rights reserved.
 //
 
-@interface AddressCard : NSObject
+@interface AddressCard : NSObject<NSCoding, NSCopying>
 
 //-(void) setName: (NSString *) theName;
 //-(void) setEmail: (NSString *) theEmail;

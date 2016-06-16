@@ -401,18 +401,72 @@ int main(int argc, const char * argv[]) {
         //        NSLog(@"dataArray2: %@", dataArray2);
         
         // 3.实现<NSCopying>协议
-        Fraction *f1 = [Fraction new];
-        Fraction *f2;
+        //        Fraction *f1 = [Fraction new];
+        //        Fraction *f2;
+        //
+        //        [f1 setNumerator:2];
+        //        [f1 setDenominator:3];
+        //
+        //        f2 = [f1 copy]; // f2 = f1;
+        //        [f2 setNumerator:1];
+        //        [f2 setDenominator:3];
+        //        
+        //        [f1 print];
+        //        [f2 print];
         
-        [f1 setNumerator:2];
-        [f1 setDenominator:3];
+        // Chapter 19
+        // 1.xml
+        //        NSString *xmlFilePath = @"/users/qizl/projects/Programming-in-Objective-C-Practise/Programming-in-Objective-C/xmlfile";
+        //        NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"apple",@"a",@"boy",@"b",@"cat",@"c",@"dog",@"d",@"egg",@"e",@"fox",@"f", nil];
+        //        if([dic writeToFile:xmlFilePath atomically:YES] == NO)
+        //            NSLog(@"Save to file failed!");
+        //
+        //        NSDictionary *dicRead = [NSDictionary dictionaryWithContentsOfFile:xmlFilePath];
+        //        NSLog(@"%@",dicRead);
         
-        f2 = [f1 copy]; // f2 = f1;
-        [f2 setNumerator:1];
-        [f2 setDenominator:3];
+        // 2.NSKeyedArchiver
+        //        NSString *nskaFilePath = @"/users/qizl/projects/Programming-in-Objective-C-Practise/Programming-in-Objective-C/nskafile";
+        //        NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"apple",@"a",@"boy",@"b",@"cat",@"c",@"dog",@"d",@"egg",@"e",@"fox",@"f", nil];
+        //        [NSKeyedArchiver archiveRootObject: dic toFile:nskaFilePath];
+        //
+        //        NSDictionary *dicRead = [NSKeyedUnarchiver unarchiveObjectWithFile:nskaFilePath];
+        //        NSLog(@"%@",dicRead);
         
-        [f1 print];
-        [f2 print];
+        // 3.编码方法和解码方法
+        //        NSString *aName = @"Julia Kochan";
+        //        NSString *aEmail = @"jewis337@axlc.com";
+        //        NSString *bName = @"Tony Iannino";
+        //        NSString *bEmail = @"tony.iannino@techfitness.com";
+        //        NSString *cName = @"Stephen Kochan";
+        //        NSString *cEmail = @"steve@classroomM.com";
+        //        NSString *dName = @"Jamie Baker";
+        //        NSString *dEmail = @"jbaker@classroomM.com";
+        //
+        //        AddressCard *card1 = [AddressCard new];
+        //        AddressCard *card2 = [AddressCard new];
+        //        AddressCard *card3 = [AddressCard new];
+        //        AddressCard *card4 = [AddressCard new];
+        //        [card1 set:aName: aEmail];
+        //        [card2 set:bName: bEmail];
+        //        [card3 set:cName: cEmail];
+        //        [card4 set:dName: dEmail];
+        //
+        //        AddressBook *myBook = [[AddressBook alloc] initWithName: @"Linda's Address Book"];
+        //        [myBook addCard:card1];
+        //        [myBook addCard:card2];
+        //        [myBook addCard:card3];
+        //        [myBook addCard:card4];
+        //
+        //        [myBook list];
+        //
+        //        NSString *addressbooksFilePath = @"/users/qizl/projects/Programming-in-Objective-C-Practise/Programming-in-Objective-C/addressbooks";
+        //        if([NSKeyedArchiver archiveRootObject:myBook toFile:addressbooksFilePath] == NO)
+        //            NSLog(@"archiving failed!");
+        //        
+        //        AddressBook *abRead = [NSKeyedUnarchiver unarchiveObjectWithFile:addressbooksFilePath];
+        //        [abRead list];
+        
+        // 4.使用NSData 创建自定义档案
     }
     return 0;
 }
