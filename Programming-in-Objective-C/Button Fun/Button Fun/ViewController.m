@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+- (IBAction)buttonPressed:(UIButton *)sender;
 
 @end
 
@@ -24,6 +25,22 @@
 -(IBAction) btnRightClick
 {
     lbl.text = @"click by right button!";
+}
+
+- (IBAction)buttonPressed:(UIButton *)sender {
+    NSString *title = [sender titleForState:UIControlStateNormal];
+    NSString *plainText = [NSString stringWithFormat:@"%@ button pressed.",title];
+    //    lbl.text = plainText;
+    
+    NSMutableAttributedString *styledText = [[NSMutableAttributedString alloc] initWithString:plainText];
+    NSDictionary *attriutes =
+    @{
+      NSFontAttributeName:[UIFont boldSystemFontOfSize:lbl.font.pointSize]
+    };
+    NSRange nameRange = [plainText rangeOfString:title];
+    
+    [styledText setAttributes:attriutes range:nameRange];
+    lbl.attributedText = styledText;
 }
 
 - (void)viewDidLoad {
