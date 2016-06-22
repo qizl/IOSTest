@@ -18,10 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uR9-Fa-cmw">
-                                <rect key="frame" x="52" y="285" width="31" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uR9-Fa-cmw">
+                                <rect key="frame" x="53" y="285" width="31" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title=" Left"/>
+                                <connections>
+                                    <action selector="btnLeftClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="JrR-X6-6CW"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labels" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oa1-n5-qfw">
                                 <rect key="frame" x="275" y="43" width="51" height="21"/>
@@ -34,6 +37,9 @@
                                 <rect key="frame" x="512" y="285" width="36" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Right"/>
+                                <connections>
+                                    <action selector="btnRightClick" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHO-5V-FvX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -46,10 +52,14 @@
                             <constraint firstItem="Oa1-n5-qfw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xAM-hC-SBk"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="n3U-UE-C7p"/>
+                    <connections>
+                        <outlet property="lbl" destination="Oa1-n5-qfw" id="LDt-Cl-J5n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="143" y="431"/>
+            <point key="canvasLocation" x="60" y="439"/>
         </scene>
     </scenes>
 </document>

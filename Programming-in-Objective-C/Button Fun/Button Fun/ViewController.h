@@ -10,6 +10,10 @@
 
 @interface ViewController : UIViewController
 
+@property (strong,nonatomic) IBOutlet UILabel *lbl;
+
+-(IBAction) btnLeftClick;
+-(IBAction) btnRightClick;
 
 @end
 
