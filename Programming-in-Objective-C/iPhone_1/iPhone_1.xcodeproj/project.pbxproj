@@ -309,6 +309,7 @@
 				F0FAE6911D144E88008E522E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

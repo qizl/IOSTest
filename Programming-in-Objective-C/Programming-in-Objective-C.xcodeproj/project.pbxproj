@@ -24,6 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F0C679DA1D1AC3A10018A4C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F0C679D61D1AC3A00018A4C0 /* Button Fun.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0C679BC1D1AC3A00018A4C0;
+			remoteInfo = "Button Fun";
+		};
 		F0FAE6961D144E89008E522E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F0FAE6921D144E88008E522E /* iPhone_1.xcodeproj */;
@@ -76,6 +83,7 @@
 		F0BD2AC21CF3D8F5002B2745 /* Programming-in-Objective-C */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Programming-in-Objective-C"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BD2AC51CF3D8F5002B2745 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0BD2ADF1CF3E156002B2745 /* demo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = demo; sourceTree = "<group>"; };
+		F0C679D61D1AC3A00018A4C0 /* Button Fun.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Button Fun.xcodeproj"; path = "Button Fun/Button Fun.xcodeproj"; sourceTree = "<group>"; };
 		F0FAE6921D144E88008E522E /* iPhone_1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iPhone_1.xcodeproj; path = iPhone_1/iPhone_1.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,6 +199,7 @@
 		F0BD2AB91CF3D8F5002B2745 = {
 			isa = PBXGroup;
 			children = (
+				F0C679D61D1AC3A00018A4C0 /* Button Fun.xcodeproj */,
 				F0FAE6921D144E88008E522E /* iPhone_1.xcodeproj */,
 				F0BD2ADF1CF3E156002B2745 /* demo */,
 				F0BD2AC41CF3D8F5002B2745 /* Programming-in-Objective-C */,
@@ -221,6 +230,14 @@
 				F0BD2AC51CF3D8F5002B2745 /* main.m */,
 			);
 			path = "Programming-in-Objective-C";
+			sourceTree = "<group>";
+		};
+		F0C679D71D1AC3A00018A4C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0C679DB1D1AC3A10018A4C0 /* Button Fun.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		F0FAE6931D144E88008E522E /* Products */ = {
@@ -277,6 +294,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = F0C679D71D1AC3A00018A4C0 /* Products */;
+					ProjectRef = F0C679D61D1AC3A00018A4C0 /* Button Fun.xcodeproj */;
+				},
+				{
 					ProductGroup = F0FAE6931D144E88008E522E /* Products */;
 					ProjectRef = F0FAE6921D144E88008E522E /* iPhone_1.xcodeproj */;
 				},
@@ -289,6 +310,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		F0C679DB1D1AC3A10018A4C0 /* Button Fun.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Button Fun.app";
+			remoteRef = F0C679DA1D1AC3A10018A4C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		F0FAE6971D144E89008E522E /* iPhone_1.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
